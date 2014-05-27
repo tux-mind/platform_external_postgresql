@@ -2,7 +2,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_CFLAGS:= -DFRONTEND -DSO_MAJOR_VERSION=5 -DUNSAFE_STAT_OK -ffunction-sections \
--fdata-sections
+-fdata-sections -DOPENSSL_NO_DEPRECATED
 
 LOCAL_C_INCLUDES:= 	$(LOCAL_PATH)/src/backend\
 										$(LOCAL_PATH)/src/port\
@@ -49,7 +49,7 @@ LOCAL_SRC_FILES := 	src/interfaces/libpq/fe-auth.c\
 										src/port/snprintf.c\
 										src/backend/storage/file/copydir.c
 
-LOCAL_STATIC_LIBRARIES:= libssl libcrypto
+LOCAL_SHARED_LIBRARIES:= libssl libcrypto
 
 LOCAL_MODULE:= libpq
 
