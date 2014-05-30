@@ -34,18 +34,14 @@ LOCAL_SRC_FILES := 	src/interfaces/libpq/fe-auth.c\
 										src/port/chklocale.c\
 										src/port/dirmod.c\
 										src/port/exec.c\
-										src/port/noblock.c\
 										src/port/path.c\
 										src/port/pgsleep.c\
-										src/port/pgstrcasecmp.c\
 										src/port/qsort.c\
 										src/port/inet_net_ntop.c\
 										src/port/qsort_arg.c\
 										src/port/sprompt.c\
 										src/port/strlcat.c\
 										src/port/getpeereid.c\
-										src/port/strlcpy.c\
-										src/port/thread.c\
 										src/port/snprintf.c\
 										src/backend/storage/file/copydir.c
 
