@@ -45,7 +45,9 @@ LOCAL_SRC_FILES := 	src/interfaces/libpq/fe-auth.c\
 										src/port/snprintf.c\
 										src/backend/storage/file/copydir.c
 
-LOCAL_SHARED_LIBRARIES:= libssl libcrypto
+LOCAL_STATIC_LIBRARIES:= \
+	libcrypto_static\
+	libssl
 
 LOCAL_MODULE:= libpq
 
