@@ -46,8 +46,8 @@ LOCAL_SRC_FILES := 	src/interfaces/libpq/fe-auth.c\
 										src/backend/storage/file/copydir.c
 
 LOCAL_STATIC_LIBRARIES:= \
-	libcrypto_static\
-	libssl
+	libssl_static\
+	libcrypto_static
 
 LOCAL_MODULE:= libpq
 
